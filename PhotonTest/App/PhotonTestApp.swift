@@ -11,7 +11,8 @@ import SwiftUI
 struct PhotonTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            SchoolListView(schoolVM: SchoolViewModel(serice: SchoolService(endPoint: SchoolResourceEndPoint(withQery: [:], andHttpOperation: .get))))
         }
     }
 }

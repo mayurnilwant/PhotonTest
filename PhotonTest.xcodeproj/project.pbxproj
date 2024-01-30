@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		E625E42C2B699C3400CB9DD2 /* PhotonTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E625E42B2B699C3400CB9DD2 /* PhotonTestApp.swift */; };
-		E625E42E2B699C3400CB9DD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E625E42D2B699C3400CB9DD2 /* ContentView.swift */; };
+		E625E42E2B699C3400CB9DD2 /* SchoolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E625E42D2B699C3400CB9DD2 /* SchoolListView.swift */; };
 		E625E4302B699C3600CB9DD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E625E42F2B699C3600CB9DD2 /* Assets.xcassets */; };
 		E625E4332B699C3600CB9DD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E625E4322B699C3600CB9DD2 /* Preview Assets.xcassets */; };
 		E625E43D2B699C3600CB9DD2 /* PhotonTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E625E43C2B699C3600CB9DD2 /* PhotonTestTests.swift */; };
 		E625E4472B699C3600CB9DD2 /* PhotonTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E625E4462B699C3600CB9DD2 /* PhotonTestUITests.swift */; };
 		E625E4492B699C3600CB9DD2 /* PhotonTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E625E4482B699C3600CB9DD2 /* PhotonTestUITestsLaunchTests.swift */; };
+		E625E4592B699CCC00CB9DD2 /* HttpHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E625E4582B699CCC00CB9DD2 /* HttpHandler.swift */; };
+		E625E45B2B69A31300CB9DD2 /* SchoolService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E625E45A2B69A31300CB9DD2 /* SchoolService.swift */; };
+		E625E45E2B69A34200CB9DD2 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = E625E45D2B69A34200CB9DD2 /* School.swift */; };
+		E625E4602B69A49300CB9DD2 /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E625E45F2B69A49300CB9DD2 /* SchoolViewModel.swift */; };
+		E625E4622B69ABEC00CB9DD2 /* SchoolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E625E4612B69ABEC00CB9DD2 /* SchoolDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		E625E4282B699C3400CB9DD2 /* PhotonTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotonTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E625E42B2B699C3400CB9DD2 /* PhotonTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotonTestApp.swift; sourceTree = "<group>"; };
-		E625E42D2B699C3400CB9DD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E625E42D2B699C3400CB9DD2 /* SchoolListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListView.swift; sourceTree = "<group>"; };
 		E625E42F2B699C3600CB9DD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E625E4322B699C3600CB9DD2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E625E4382B699C3600CB9DD2 /* PhotonTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotonTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +49,11 @@
 		E625E4422B699C3600CB9DD2 /* PhotonTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotonTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E625E4462B699C3600CB9DD2 /* PhotonTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotonTestUITests.swift; sourceTree = "<group>"; };
 		E625E4482B699C3600CB9DD2 /* PhotonTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotonTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E625E4582B699CCC00CB9DD2 /* HttpHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHandler.swift; sourceTree = "<group>"; };
+		E625E45A2B69A31300CB9DD2 /* SchoolService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolService.swift; sourceTree = "<group>"; };
+		E625E45D2B69A34200CB9DD2 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		E625E45F2B69A49300CB9DD2 /* SchoolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewModel.swift; sourceTree = "<group>"; };
+		E625E4612B69ABEC00CB9DD2 /* SchoolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +104,9 @@
 		E625E42A2B699C3400CB9DD2 /* PhotonTest */ = {
 			isa = PBXGroup;
 			children = (
-				E625E42B2B699C3400CB9DD2 /* PhotonTestApp.swift */,
-				E625E42D2B699C3400CB9DD2 /* ContentView.swift */,
+				E625E4572B699CB300CB9DD2 /* App */,
+				E625E4562B699C9700CB9DD2 /* School  Module */,
+				E625E4552B699C8700CB9DD2 /* HttpLibrary */,
 				E625E42F2B699C3600CB9DD2 /* Assets.xcassets */,
 				E625E4312B699C3600CB9DD2 /* Preview Content */,
 			);
@@ -125,6 +136,42 @@
 				E625E4482B699C3600CB9DD2 /* PhotonTestUITestsLaunchTests.swift */,
 			);
 			path = PhotonTestUITests;
+			sourceTree = "<group>";
+		};
+		E625E4552B699C8700CB9DD2 /* HttpLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				E625E4582B699CCC00CB9DD2 /* HttpHandler.swift */,
+			);
+			path = HttpLibrary;
+			sourceTree = "<group>";
+		};
+		E625E4562B699C9700CB9DD2 /* School  Module */ = {
+			isa = PBXGroup;
+			children = (
+				E625E45C2B69A33900CB9DD2 /* Models */,
+				E625E42D2B699C3400CB9DD2 /* SchoolListView.swift */,
+				E625E45A2B69A31300CB9DD2 /* SchoolService.swift */,
+				E625E45F2B69A49300CB9DD2 /* SchoolViewModel.swift */,
+				E625E4612B69ABEC00CB9DD2 /* SchoolDetailView.swift */,
+			);
+			path = "School  Module";
+			sourceTree = "<group>";
+		};
+		E625E4572B699CB300CB9DD2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E625E42B2B699C3400CB9DD2 /* PhotonTestApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E625E45C2B69A33900CB9DD2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E625E45D2B69A34200CB9DD2 /* School.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E625E42E2B699C3400CB9DD2 /* ContentView.swift in Sources */,
+				E625E4622B69ABEC00CB9DD2 /* SchoolDetailView.swift in Sources */,
+				E625E4602B69A49300CB9DD2 /* SchoolViewModel.swift in Sources */,
+				E625E42E2B699C3400CB9DD2 /* SchoolListView.swift in Sources */,
+				E625E4592B699CCC00CB9DD2 /* HttpHandler.swift in Sources */,
 				E625E42C2B699C3400CB9DD2 /* PhotonTestApp.swift in Sources */,
+				E625E45E2B69A34200CB9DD2 /* School.swift in Sources */,
+				E625E45B2B69A31300CB9DD2 /* SchoolService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

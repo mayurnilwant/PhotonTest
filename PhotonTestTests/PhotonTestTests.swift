@@ -13,9 +13,39 @@ final class PhotonTestTests: XCTestCase {
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
+    
+    
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+    }
+    
+    
+    //Test
+    func testSchoolEndPointUrlStringPositiveResult() throws {
+        
+//        let schoolEndPoint = SchoolResourceEndPoint(withQery: [:], andHttpOperation: .get)
+//        
+//        XCTAssertqual(schoolEndPoint.url?.absoluteString, "https://data.cityofnewyork.us/resource/s3k6-pzi2.json")
+        
+        
+    }
+    
+    func testSchoolListSerview() {
+        
+        let schoolEndPoint = SchoolResourceEndPoint(withQery: [:], andHttpOperation: .get)
+        let schooService = SchoolService(endPoint: schoolEndPoint)
+        
+        let expectation = self.expectation(description: "School Service")
+        Task {
+            let schools = try await schooService.getSchools()
+            if schools?.count != 0 {
+                expectation.fulfill()
+            }
+            
+        }
+        waitForExpectations(timeout: 10)
+        
     }
 
     func testExample() throws {
