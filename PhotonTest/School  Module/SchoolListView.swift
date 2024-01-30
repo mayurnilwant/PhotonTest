@@ -27,7 +27,9 @@ struct SchoolListView: View {
                         
                         SchooCell(school: school) { school in
                             
-                            // Use this school object to push view.
+                            // Use this school object to push view School Detail View.
+                            
+                            
                             
                         }
                     
@@ -82,12 +84,13 @@ struct SchooCell: View {
                             .font(.system(size: 16.0, weight: .bold))
                             .foregroundColor(.blue)
                             .onTapGesture {
+                                self.shoudShowTipView = false
                                 self.callBack(self.school)
                                 
                             }
                             .onLongPressGesture {
                                 //Show View here after catchinglong press
-                                print("Long press")
+                                print("Long Press to a tip on the view")
                                 self.shoudShowTipView = true
                             }
                             

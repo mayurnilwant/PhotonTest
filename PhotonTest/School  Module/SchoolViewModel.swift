@@ -42,6 +42,7 @@ class SchoolViewModel: ViewModelProtocol, ObservableObject {
         
         self.viewModelStatus = .loading
         
+        
             self.schools = await self.serice.getSchools()
             
             self.viewModelStatus = ((self.schools?.count) != nil) ? .success : .failure
