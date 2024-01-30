@@ -41,9 +41,11 @@ class SchoolViewModel: ViewModelProtocol, ObservableObject {
     func getSchools() async {
         
         self.viewModelStatus = .loading
-        self.schools = await self.serice.getSchools()
         
-        self.viewModelStatus = ((self.schools?.count) != nil) ? .success : .failure
+            self.schools = await self.serice.getSchools()
+            
+            self.viewModelStatus = ((self.schools?.count) != nil) ? .success : .failure
+        
 
         print("")
     }
