@@ -38,13 +38,13 @@ class SchoolViewModel: ViewModelProtocol, ObservableObject {
     
     @Published var schools: [School]?
     
+    @MainActor
     func getSchools() async {
         
         self.viewModelStatus = .loading
         
         
             self.schools = await self.serice.getSchools()
-            
             self.viewModelStatus = ((self.schools?.count) != nil) ? .success : .failure
         
 
